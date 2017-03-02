@@ -13,6 +13,13 @@
 		A90C2C5B1E68095700F7D2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C591E68095700F7D2D4 /* Main.storyboard */; };
 		A90C2C5D1E68095700F7D2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C5C1E68095700F7D2D4 /* Assets.xcassets */; };
 		A90C2C601E68095700F7D2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C5E1E68095700F7D2D4 /* LaunchScreen.storyboard */; };
+		A90C2C691E68115600F7D2D4 /* KINWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90C2C681E68115600F7D2D4 /* KINWebBrowserViewController.m */; };
+		A90C2C721E68118100F7D2D4 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C6C1E68118100F7D2D4 /* backbutton.png */; };
+		A90C2C731E68118100F7D2D4 /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C6D1E68118100F7D2D4 /* backbutton@2x.png */; };
+		A90C2C741E68118100F7D2D4 /* backbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C6E1E68118100F7D2D4 /* backbutton@3x.png */; };
+		A90C2C751E68118100F7D2D4 /* forwardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C6F1E68118100F7D2D4 /* forwardbutton.png */; };
+		A90C2C761E68118100F7D2D4 /* forwardbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C701E68118100F7D2D4 /* forwardbutton@2x.png */; };
+		A90C2C771E68118100F7D2D4 /* forwardbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90C2C711E68118100F7D2D4 /* forwardbutton@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,14 @@
 		A90C2C5C1E68095700F7D2D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90C2C5F1E68095700F7D2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90C2C611E68095700F7D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90C2C671E68115600F7D2D4 /* KINWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KINWebBrowserViewController.h; sourceTree = "<group>"; };
+		A90C2C681E68115600F7D2D4 /* KINWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KINWebBrowserViewController.m; sourceTree = "<group>"; };
+		A90C2C6C1E68118100F7D2D4 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		A90C2C6D1E68118100F7D2D4 /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
+		A90C2C6E1E68118100F7D2D4 /* backbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@3x.png"; sourceTree = "<group>"; };
+		A90C2C6F1E68118100F7D2D4 /* forwardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardbutton.png; sourceTree = "<group>"; };
+		A90C2C701E68118100F7D2D4 /* forwardbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forwardbutton@2x.png"; sourceTree = "<group>"; };
+		A90C2C711E68118100F7D2D4 /* forwardbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forwardbutton@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,9 @@
 				A90C2C541E68095700F7D2D4 /* AppDelegate.m */,
 				A90C2C561E68095700F7D2D4 /* ViewController.h */,
 				A90C2C571E68095700F7D2D4 /* ViewController.m */,
+				A90C2C671E68115600F7D2D4 /* KINWebBrowserViewController.h */,
+				A90C2C681E68115600F7D2D4 /* KINWebBrowserViewController.m */,
+				A90C2C6A1E68118100F7D2D4 /* CustomWebView */,
 				A90C2C591E68095700F7D2D4 /* Main.storyboard */,
 				A90C2C5C1E68095700F7D2D4 /* Assets.xcassets */,
 				A90C2C5E1E68095700F7D2D4 /* LaunchScreen.storyboard */,
@@ -77,6 +95,27 @@
 				A90C2C511E68095700F7D2D4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90C2C6A1E68118100F7D2D4 /* CustomWebView */ = {
+			isa = PBXGroup;
+			children = (
+				A90C2C6B1E68118100F7D2D4 /* Assets */,
+			);
+			path = CustomWebView;
+			sourceTree = "<group>";
+		};
+		A90C2C6B1E68118100F7D2D4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A90C2C6C1E68118100F7D2D4 /* backbutton.png */,
+				A90C2C6D1E68118100F7D2D4 /* backbutton@2x.png */,
+				A90C2C6E1E68118100F7D2D4 /* backbutton@3x.png */,
+				A90C2C6F1E68118100F7D2D4 /* forwardbutton.png */,
+				A90C2C701E68118100F7D2D4 /* forwardbutton@2x.png */,
+				A90C2C711E68118100F7D2D4 /* forwardbutton@3x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90C2C771E68118100F7D2D4 /* forwardbutton@3x.png in Resources */,
+				A90C2C741E68118100F7D2D4 /* backbutton@3x.png in Resources */,
 				A90C2C601E68095700F7D2D4 /* LaunchScreen.storyboard in Resources */,
+				A90C2C761E68118100F7D2D4 /* forwardbutton@2x.png in Resources */,
+				A90C2C731E68118100F7D2D4 /* backbutton@2x.png in Resources */,
 				A90C2C5D1E68095700F7D2D4 /* Assets.xcassets in Resources */,
+				A90C2C751E68118100F7D2D4 /* forwardbutton.png in Resources */,
+				A90C2C721E68118100F7D2D4 /* backbutton.png in Resources */,
 				A90C2C5B1E68095700F7D2D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +198,7 @@
 				A90C2C581E68095700F7D2D4 /* ViewController.m in Sources */,
 				A90C2C551E68095700F7D2D4 /* AppDelegate.m in Sources */,
 				A90C2C521E68095700F7D2D4 /* main.m in Sources */,
+				A90C2C691E68115600F7D2D4 /* KINWebBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

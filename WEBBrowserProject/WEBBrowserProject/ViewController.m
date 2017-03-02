@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KINWebBrowserViewController.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
+- (IBAction)clickBtnAction:(id)sender {
+    KINWebBrowserViewController *linkVC = [KINWebBrowserViewController webBrowser];
+    //http://www.baidu.com  @"http://hy.hzgh.org/"
+    linkVC.urlString = @"http://www.baidu.com";
+   // [linkVC setDelegate:self];
+    // 设为No才可以设置title
+    linkVC.showsPageTitleInNavigationBar = NO;
+    // 设置导航栏的title
+    linkVC.title = @"标题";
+    // 隐藏toolBar右边的功能按钮
+    linkVC.actionButtonHidden = YES;
+    // 设置导航栏图片字体颜色－progressView《进度条》
+    linkVC.tintColor = [UIColor redColor];
+    
+    [self.navigationController pushViewController:linkVC animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
