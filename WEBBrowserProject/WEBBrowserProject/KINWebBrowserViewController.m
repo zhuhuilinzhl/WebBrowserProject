@@ -2,8 +2,8 @@
 //  KINWebBrowserViewController.m
 //  YunNanTong
 //
-//  Created by 唐海洋 on 16/8/9.
-//  Copyright © 2016年 唐海洋. All rights reserved.
+//  Created by  on 16/8/9.
+//  Copyright © 2016年 . All rights reserved.
 //
 
 #import "KINWebBrowserViewController.h"
